@@ -40,6 +40,13 @@ export const columns = [
   {
     accessorKey: "phone",
     header: "Phone",
+    cell: ({ row }) => {
+      const { phone } = row.original;
+      const countryCode = phone.slice(0, phone.indexOf(" ")) + " ";
+      let phoneNumber = phone.slice(phone.indexOf(" ") + 1).replace(/ /g, "");
+      phoneNumber = phoneNumber.slice(0, 5) + " " + phoneNumber.slice(5);
+      return <div>{countryCode + phoneNumber}</div>;
+    },
   },
   {
     accessorKey: "age",
@@ -48,6 +55,10 @@ export const columns = [
   {
     accessorKey: "gender",
     header: "Gender",
+    cell: ({ row }) => {
+      const { gender } = row.original;
+      return <div>{gender.charAt(0).toUpperCase() + gender.slice(1)}</div>;
+    },
   },
   {
     accessorKey: "companyName",
