@@ -46,7 +46,3 @@ You can view the live demo [here](https://digitaljalebi.netlify.app/).
 4. ShadCN UI
 
 ### Thank You!
-
-```
-
-```
