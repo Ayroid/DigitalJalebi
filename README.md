@@ -17,6 +17,14 @@ This is a simple React application that fetches data from an API and displays it
 
 You can view the live demo [here](https://digitaljalebi.netlify.app/).
 
+### Technologies Used
+
+1. React
+
+2. Axios
+3. Tailwind CSS
+4. ShadCN UI
+
 ### Installation
 
 1. Clone the repository
@@ -37,12 +45,6 @@ You can view the live demo [here](https://digitaljalebi.netlify.app/).
 3. Search functionality
 4. Responsive design
 
-### Technologies Used
 
-1. React
 
-2. Axios
-3. Tailwind CSS
-4. ShadCN UI
-
-### Thank You!
+# Thank You!
