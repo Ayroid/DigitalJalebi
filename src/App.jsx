@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className="container mx-auto">
+    <div className="container">
       {/* HEADER */}
       <h1 className="text-5xl font-bold">DIGITAL JALEBI</h1>
       <h2 className="text-xl font-light mt-2 mb-10">
