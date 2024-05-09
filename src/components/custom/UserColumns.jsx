@@ -2,12 +2,20 @@
 
 export const columns = [
   {
+    accessorKey: "profilePic",
+    header: "Profile Pic",
+    cell: ({ row }) => {
+      const { image } = row.original;
+      return <img className="profileImage" src={image} alt="Profile Pic" />;
+    },
+  },
+  {
     accessorKey: "username",
     header: "Username",
   },
   {
-    accessorKey: "completeName",
-    header: "Complete Name",
+    accessorKey: "fullName",
+    header: "Full Name",
     cell: ({ row }) => {
       const { firstName, maidenName, lastName } = row.original;
       const completeName = `${firstName} ${maidenName} ${lastName}`;
