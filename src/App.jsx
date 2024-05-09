@@ -35,7 +35,7 @@ function App() {
             "https://dummyjson.com/users/search?q=" + userName.current.value
           );
         }}
-        className="flex gap-5 mb-5"
+        className="flex gap-5 mb-10"
       >
         <Input ref={userName} placeholder="Search user" />
         <Button
