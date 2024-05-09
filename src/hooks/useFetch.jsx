@@ -11,12 +11,10 @@ const useFetch = ({ url }) => {
   const [error, setError] = useState(false);
 
   const fetchData = (url) => {
-    console.log(url);
     axios
       .get(url)
       .then((res) => {
         setData(res.data.users);
-        console.log(res.data);
       })
       .catch(() => {
         setData(null);
