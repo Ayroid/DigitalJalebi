@@ -15,6 +15,8 @@
 
 This is a simple React application that fetches data from an API and displays it in a table. The application has a search bar that filters the data based on the user's input. The user can also sort the data based on the column headers.
 
+You can view the live demo [here](https://digitaljalebi.netlify.app/).
+
 ### Installation
 
 1. Clone the repository
