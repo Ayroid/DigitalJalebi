@@ -6,7 +6,11 @@ export const columns = [
     header: "Profile Pic",
     cell: ({ row }) => {
       const { image } = row.original;
-      return <img className="profileImage" src={image} alt="Profile Pic" />;
+      return (
+        <div className="">
+          <img className="profileImage" src={image} alt="Profile Pic" />
+        </div>
+      );
     },
   },
   {
