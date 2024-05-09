@@ -19,22 +19,19 @@ You can view the live demo [here](https://digitaljalebi.netlify.app/).
 
 ### Technologies Used
 
-1. React
+1. React - Vite
 
-2. Axios
-3. Tailwind CSS
-4. ShadCN UI
+2. Axios - For fetching data from the API
+3. Tailwind CSS - For styling the application
+4. ShadCN UI - React Component Library
 
 ### Installation
 
 1. Clone the repository
 
 2. Run `npm install` to install the dependencies
-
 3. Run `npm run dev` to start the application
-
 4. Open `http://localhost:5173` in your browser
-
 5. Application is now running!
 
 ### Features
@@ -44,7 +41,5 @@ You can view the live demo [here](https://digitaljalebi.netlify.app/).
 2. Displays data in a table
 3. Search functionality
 4. Responsive design
-
-
 
 # Thank You!

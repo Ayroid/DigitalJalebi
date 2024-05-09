@@ -1,3 +1,7 @@
+// USE FETCH HOOK
+// This hook is used to fetch data from the server.
+// It takes the URL as a parameter and returns the data, error, loading, setData, and fetchData.
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 

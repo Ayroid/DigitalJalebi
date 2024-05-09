@@ -9,6 +9,7 @@ import { useRef } from "react";
 function App() {
   const userName = useRef(null);
 
+  // Fetching data from the API
   const { error, loading, data, fetchData } = useFetch({
     url: "https://dummyjson.com/users",
   });
@@ -23,11 +24,13 @@ function App() {
 
   return (
     <div className="container mx-auto">
+      {/* HEADER */}
       <h1 className="text-5xl font-bold">DIGITAL JALEBI</h1>
       <h2 className="text-xl font-light mt-2 mb-10">
         Ayush Singh Kushwah - 500095575
       </h2>
 
+      {/* SEARCH FUNCTIONALITY */}
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -47,6 +50,7 @@ function App() {
         </Button>
       </form>
 
+      {/* USER DATA TABLE */}
       <UserTable columns={columns} data={data} />
     </div>
   );

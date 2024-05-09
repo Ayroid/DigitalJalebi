@@ -1,3 +1,5 @@
+// Using Table Component from Shared UI Components to render the table
+
 import PropTypes from "prop-types";
 import {
   useReactTable,
@@ -27,6 +29,7 @@ const UserTable = ({ data, columns }) => {
   return (
     <>
       <Table>
+        {/* TABLE HEADER- Displays Column Names */}
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
@@ -43,6 +46,8 @@ const UserTable = ({ data, columns }) => {
             </TableRow>
           ))}
         </TableHeader>
+
+        {/* TABLE BODY- Displays Data */}
         <TableBody>
           {table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
@@ -63,6 +68,8 @@ const UserTable = ({ data, columns }) => {
           )}
         </TableBody>
       </Table>
+
+      {/* PAGINATION */}
       <div className="flex gap-5 justify-center mt-5">
         <Button
           onClick={() => {

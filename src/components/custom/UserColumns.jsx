@@ -1,3 +1,5 @@
+// Array of columns for the UserTable component
+
 export const columns = [
   {
     accessorKey: "username",
