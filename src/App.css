@@ -42,8 +42,8 @@
 }
 
 .profileImage {
-  height: 5rem;
-  width: 5rem;
+  height: 100%;
+  width: 100%;
 }
 
 .profileImageDiv {

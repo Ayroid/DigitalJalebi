@@ -7,7 +7,7 @@ export const columns = [
     cell: ({ row }) => {
       const { image } = row.original;
       return (
-        <div className="">
+        <div className="profileImageDiv">
           <img className="profileImage" src={image} alt="Profile Pic" />
         </div>
       );
