@@ -24,7 +24,10 @@ function App() {
   return (
     <div className="container mx-auto">
       <h1 className="text-5xl font-bold">DIGITAL JALEBI</h1>
-      <h2 className="text-xl font-light mt-2 mb-10">Ayush Singh Kushwah - 500095575</h2>
+      <h2 className="text-xl font-light mt-2 mb-10">
+        Ayush Singh Kushwah - 500095575
+      </h2>
+
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -43,6 +46,7 @@ function App() {
           Search
         </Button>
       </form>
+
       <UserTable columns={columns} data={data} />
     </div>
   );
