@@ -77,6 +77,9 @@ const UserTable = ({ data, columns }) => {
           }}
           style={{
             width: "100px",
+            background: !table.getCanPreviousPage() && "white",
+            color: !table.getCanPreviousPage() && "black",
+            border: !table.getCanPreviousPage() && "1px solid black",
           }}
         >
           Prev
@@ -87,6 +90,9 @@ const UserTable = ({ data, columns }) => {
           }}
           style={{
             width: "100px",
+            background: !table.getCanNextPage() && "white",
+            color: !table.getCanNextPage() && "black",
+            border: !table.getCanNextPage() && "1px solid black",
           }}
         >
           Next
