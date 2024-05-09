@@ -2,6 +2,13 @@
 
 export const columns = [
   {
+    accessorKey: "S.No",
+    header: "S.No",
+    cell: ({ row }) => {
+      return <div>{row.index + 1}</div>;
+    },
+  },
+  {
     accessorKey: "profilePic",
     header: "Profile Pic",
     cell: ({ row }) => {
